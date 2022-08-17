@@ -12,9 +12,9 @@
 <body>
         <!-- header start -->
 
-   <header>
+   <header id="Home">
 
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg fixed-top bg-info" style="--bs-bg-opacity: .9;">
         <div class="container">
           <a class="navbar-brand" href="#">
             <img src="photos/panda-logo.png" alt="" width="70" height="69">
@@ -25,16 +25,16 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active text-white" aria-current="page" href="#Home">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Shoes</a>
+                <a class="nav-link text-white" href="#Shoes">Shoes</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Backpack</a>
+                <a class="nav-link text-white" href="#Backpack">Backpack</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Subscribe</a>
+                <a class="nav-link text-white" href="#Subscribe">Subscribe</a>
               </li>
              
             </ul>
@@ -42,6 +42,8 @@
           </div>
         </div>
       </nav>
+
+      <br><br><br><br>
 <!-- Image Slider -->
 
 <section class="container">
@@ -156,56 +158,9 @@
 
   </section>
 
-  <!-- Produsts self (Bags)-->
-
-  <section class="container">
-    <h2>Backpack</h2>
-    <br>
-    <div class="row row-cols-1 row-cols-md-3 g-4">
-        <div class="col">
-          <div class="card h-100 border-0 shadow">
-            <img src="photos/bag slide.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Saltu Bag</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            </div>
-            <div>
-              <button class="btn btn-warning ms-3 mb-3">Buy Now</button>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card h-100 border-0 shadow">
-            <img src="photos/bag slide.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">K110 Saltu Bag</h5>
-              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-            </div>
-            <div>
-              <button class="btn btn-warning ms-3 mb-3">Buy Now</button>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card h-100 border-0 shadow">
-            <img src="photos/bag slide.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">R245 Saltu Bag</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-            </div>
-            <div>
-              <button class="btn btn-warning ms-3 mb-3">Buy Now</button>
-            </div>
-          </div>
-        </div>
-
-      </div>
-  </section>
-
+ 
         <!-- products self(shoes) -->
-  <section class="container">
+  <section class="container" id="Shoes">
     <br>
     <br>
     <h2>Shoes</h2>
@@ -251,15 +206,76 @@
         </div>
 
       </div>
+  </section>
 
+   <!-- Produsts self (Bags)-->
+
+   <section class="container mt-5" id="Backpack">
+    <h2>Backpack</h2>
+    <br>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100 border-0 shadow">
+            <img src="photos/bag slide.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Saltu Bag</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+            <div>
+              <button class="btn btn-warning ms-3 mb-3">Buy Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100 border-0 shadow">
+            <img src="photos/bag slide.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">K110 Saltu Bag</h5>
+              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            </div>
+            <div>
+              <button class="btn btn-warning ms-3 mb-3">Buy Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100 border-0 shadow">
+            <img src="photos/bag slide.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">R245 Saltu Bag</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+            </div>
+            <div>
+              <button class="btn btn-warning ms-3 mb-3">Buy Now</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+  </section>
+
+
+  <!-- Subscribe -->
+
+  <section style="height: 200px;" class="container bg-info mt-5 rounded d-flex justify-content-center align-items-center " id="Subscribe">
+    <div>
+        <h1>Stay with Us</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur <br> adipisicing elit.</p>
+        <input type="email" name="email" id="email" placeholder="Enter your Email">
+
+    </div>
 
   </section>
+
+
 </main>
 
 <footer>
-    <div class="text-center p-4 ">
-        © 2022 Copyright
-      </div>
+    <p class="text-center p-4 ">
+       <small> © 2022 Copyright</small>
+    </p>
 </footer>
 
 
